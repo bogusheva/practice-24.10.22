@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Practice - forms</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact-title">Create an Account</h2>
+          <form action="#" class="form-block" method="post">
+            <div class="form-section">
+              <div class="form-item-block">
+                <label for="first-name" class="input-label">First Name</label>
+                <div class="input-holder">
+                  <input type="text" id="first-name" class="input" />
+                </div>
+              </div>
+              <div class="form-item-block">
+                <label for="last-name" class="input-label">Last Name</label>
+                <div class="input-holder">
+                  <input type="text" id="last-name" class="input" />
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="form-item-block email">
+                <label for="email" class="input-label">E-mail</label>
+                <div class="input-holder">
+                  <input type="email" id="email" class="input" />
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="radio-list form-item-block">
+                <div class="radio-list-item">
+                  <div class="custom-radio">
+                    <input id="man" type="radio" name="radio-name" />
+                    <label for="man">Man</label>
+                  </div>
+                </div>
+                <div class="radio-list-item">
+                  <div class="custom-radio">
+                    <input id="female" type="radio" name="radio-name" />
+                    <label for="female">Female</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="form-item-block">
+                <label for="country" class="input-label">Country</label>
+                <div class="input-holder">
+                  <input type="text" id="country" class="input" />
+                </div>
+              </div>
+              <div class="form-item-block">
+                <label for="city" class="input-label">City</label>
+                <div class="input-holder">
+                  <input type="text" id="city" class="input" />
+                </div>
+              </div>
+            </div>
+            <button class="btn" type="submit">Sign Up</button>
+          </form>
+          <div class="terms-block">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </div>
+          <div class="line-block"></div>
+          <div class="log-in-block">
+            Have an account?
+            <a href="#">Log in</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

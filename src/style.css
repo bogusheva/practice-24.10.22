@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+.container {
+  max-width: 570px;
+  width: 100%;
+  padding: 35px 34px 16px 36px;
+  text-align: left;
+}
+.contact {
+  padding: 55px 135px;
+  width: 100%;
+}
+.form-block {
+  padding: 20px 0 22px;
+  margin: 0;
+}
+.form-section {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+.form-section:last-child {
+  padding-bottom: 22px;
+}
+.form-item-block {
+  width: 100%;
+}
+.form-block .input-label {
+  display: block;
+  margin: 0 0 7px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #545454;
+}
+.form-block .input {
+  padding: 7px 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #545454;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #545454;
+  border-radius: 6px;
+  width: 100%;
+}
+.form-block .input:focus {
+  border: 1px solid #007bff;
+}
+.form-item-block.email::after {
+  content: "We'll never share your email with anyone else.";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #969696;
+}
+.btn {
+  width: 100%;
+  background-color: #007bff;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  padding: 8px 10px;
+}
+.terms-block {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #969696;
+}
+.terms-block a {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+.line-block {
+  width: 100%;
+  border-bottom: 1px solid #545454;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.log-in-block {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.log-in-block a {
+  color: #007bff;
+  padding-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.radio-list {
+  margin: 0;
+  padding: 0;
+  color: #545454;
+}
+.radio-list.form-item-block {
+  display: flex;
+  gap: 21px;
+}
+.custom-radio {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.custom-radio input[type="radio"] {
+  position: fixed;
+  top: -1000vh;
+  left: -1000vw;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-radio input[type="radio"]:checked + label:after {
+  opacity: 1;
+  visibility: visible;
+}
+.custom-radio input[type="radio"]:checked + label:before {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+.custom-radio label {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+}
+.custom-radio label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #545454;
+  transition: border ease-in-out 0.2s;
+}
+.custom-radio label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 1;
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
+}
